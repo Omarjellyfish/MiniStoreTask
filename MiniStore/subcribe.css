@@ -1,0 +1,56 @@
+.subscribe{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(12,1fr);
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(39, 39, 50);
+    color: white;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+}
+.subscribe .text-content{
+    grid-column: 1/8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-content h3{
+    font-size: 24px;
+}
+.text-content p{
+    font-weight: light;
+    margin-top: 10px;
+    font-size: 14px;
+    color: grey;
+}
+.subscribe .input-sub{
+    grid-column: 8/13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-sub input{
+    width: 60%;
+    height: 6dvh;
+    outline: none;
+    margin-right: 0;
+}
+
+.sub-btn{
+    background-color: lightskyblue;
+    width: 40%;
+    height: 6.3dvh;
+    color: white;
+    font-size: larger;
+    outline-color: transparent;
+    border: none;
+    border-radius: 2px;
+    margin-left: 0;
+}
+.sub-btn:hover{
+    background-color: rgb(39, 39, 50);
+    transition: .3s;
+}

@@ -1,0 +1,25 @@
+.services{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    font-weight: lighter;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: white;
+    padding: 60px;
+    width: 350px;
+}
+.service h4{
+    font-size: larger;
+}
+.bottom-text{
+    color: grey;
+}
+.service h4 i{
+    color: lightskyblue;
+}
