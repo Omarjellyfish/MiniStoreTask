@@ -47,3 +47,12 @@
     font-size: small;
     
 }
+.blog a{
+    color: black;
+    font-weight: lighter;
+    text-decoration-line: underline ;
+    font-size: 18px;
+}
+.blog a:hover{
+    text-decoration: none;
+}
