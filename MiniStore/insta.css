@@ -52,3 +52,12 @@
     transform: translate(-50%, -50%); /*center the button in the middle*/
     opacity: 1; /* Show button on hover */
 }
+.insta a{
+    color: black;
+    font-weight: lighter;
+    text-decoration-line: underline ;
+    font-size: 18px;
+}
+.insta a:hover{
+    text-decoration: none;
+}
