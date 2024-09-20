@@ -14,8 +14,9 @@
 //     item.scrollLeft -= containerWidth;
 //     console.log("pre");
 //   });
-// }); scrolling with button
+// }); scrolling with button clutter
 
+// nav mobile logic
 const navBtn = document.getElementById("nav-btn");
 const dropNav = document.getElementById("dropNav");
 const closeBtn = document.getElementById("close-btn");
@@ -33,6 +34,7 @@ closeBtn.addEventListener("click", () => {
   mainContainer.style.display = "block";
 });
 
+// displaying drop menu in mobile
 const pc = document.getElementById("pages-content");
 pc.style.display = "none"; // idk why i need this but i do for it to work on first try
 document.getElementById("aP").addEventListener("click", () => {
@@ -42,7 +44,7 @@ document.getElementById("aP").addEventListener("click", () => {
     pc.style.display = "none";
   }
 });
-
+// scrolling
 const scrollContainer = document.getElementById("cards");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");

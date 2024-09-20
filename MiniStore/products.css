@@ -2,8 +2,8 @@
     font-weight: light;
     padding: 30px;
     margin: 10px;
-
 }
+/* help with scrolling on pc */
 /* video i tried to mimic scrolling from https://www.youtube.com/watch?v=gzXyRa7jwk4 */
 #next-prev-btns{
     display: none;
