@@ -56,3 +56,9 @@
 .blog a:hover{
     text-decoration: none;
 }
+@media only screen and (max-width: 600px){
+    .blog-cards{
+        display: flex;
+        flex-direction: column;
+    }
+}

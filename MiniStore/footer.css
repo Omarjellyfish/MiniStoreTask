@@ -107,3 +107,13 @@
     grid-row: 3/3;
     border-top: solid 1px rgba(0, 0, 0, 0.253) ;
 }
+
+/* start responsive footer*/
+@media only screen and (max-width: 600px) {
+    #footer{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+    
+}

@@ -38,7 +38,7 @@
     position: absolute;
     top: 80%; /* start from the middle of the card*/
     left: 50%;
-    width: 300px; 
+    max-width: 300px; 
     height: 40px;
     background-color: rgb(31, 30, 30);
     color: white;
@@ -79,4 +79,7 @@
 }
 .products a:hover{
     text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+    
 }

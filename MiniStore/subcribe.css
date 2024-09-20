@@ -9,7 +9,7 @@
     color: white;
     padding: 50px;
     font-family: 'Times New Roman', Times, serif;
-    height: 100px;
+    min-height: 100px;
 }
 .subscribe .text-content{
     grid-column: 1/8;
@@ -53,4 +53,10 @@
 .sub-btn:hover{
     background-color: rgb(39, 39, 50);
     transition: .3s;
+}
+@media only screen and (max-width: 600px){
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+    }
 }
