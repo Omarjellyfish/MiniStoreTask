@@ -5,6 +5,9 @@
 
 }
 /* video i tried to mimic scrolling from https://www.youtube.com/watch?v=gzXyRa7jwk4 */
+#next-prev-btns{
+    display: none;
+}
 .cards{
     display: grid;
     grid-template-columns: auto auto auto auto ;
