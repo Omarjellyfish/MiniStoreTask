@@ -9,3 +9,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+@media(max-width:600px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+}
