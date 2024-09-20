@@ -32,3 +32,13 @@ closeBtn.addEventListener("click", () => {
   phoneNav.style.display = "flex";
   mainContainer.style.display = "block";
 });
+
+const pc = document.getElementById("pages-content");
+pc.style.display = "none"; // idk why i need this but i do for it to work on first try
+document.getElementById("aP").addEventListener("click", function () {
+  if (pc.style.display == "none" || "") {
+    pc.style.display = "flex";
+  } else {
+    pc.style.display = "none";
+  }
+});
