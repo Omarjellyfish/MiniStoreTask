@@ -35,10 +35,22 @@ closeBtn.addEventListener("click", () => {
 
 const pc = document.getElementById("pages-content");
 pc.style.display = "none"; // idk why i need this but i do for it to work on first try
-document.getElementById("aP").addEventListener("click", function () {
+document.getElementById("aP").addEventListener("click", () => {
   if (pc.style.display == "none" || "") {
     pc.style.display = "flex";
   } else {
     pc.style.display = "none";
   }
+});
+
+const scrollContainer = document.getElementById("cards");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
+scrollContainer.style.scrollBehavior = "smooth";
+
+nextBtn.addEventListener("click", () => {
+  scrollContainer.scrollLeft += scrollContainer.clientWidth;
+});
+prevBtn.addEventListener("click", () => {
+  scrollContainer.scrollLeft -= scrollContainer.clientWidth;
 });

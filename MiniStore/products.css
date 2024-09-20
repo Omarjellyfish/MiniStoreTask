@@ -4,12 +4,18 @@
     margin: 10px;
 
 }
+/* video i tried to mimic scrolling from https://www.youtube.com/watch?v=gzXyRa7jwk4 */
 .cards{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: auto auto auto auto ;
     gap: 30px;
     margin: auto;
     width: 100%;
+    flex: none;
+    overflow-x: scroll;
+}
+.cards::-webkit-scrollbar{
+    display: none;
 }
 .product-title{
     display: flex;
@@ -24,7 +30,7 @@
 .card{
     position: relative;
     display: flex;
-    grid-column: span 3;
+    /* grid-column: span 3; */
     flex-direction: column;
     overflow: hidden;
     width: 100%;
@@ -106,4 +112,5 @@
     .add-cart {
         width: 90%;
     }
+    
 }
