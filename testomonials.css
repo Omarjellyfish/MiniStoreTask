@@ -1,0 +1,35 @@
+.testomonials {
+    height: 400px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    padding: 40px;
+}
+
+.testomonials h2 {
+    margin: 0; /* Remove default margin if needed */
+    padding-bottom: 20px; /* Add space below the heading if desired */
+}
+
+.t-card {
+    background-color: white;
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%; 
+    margin: 0 auto;
+    text-align: center; 
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testomonials i{
+    color: lightskyblue;
+}

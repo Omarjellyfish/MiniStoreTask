@@ -1,0 +1,119 @@
+.products{
+    font-weight: light;
+    padding: 30px;
+    margin: 10px;
+}
+/* help with scrolling on pc */
+/* video i tried to mimic scrolling from https://www.youtube.com/watch?v=gzXyRa7jwk4 */
+#next-prev-btns{
+    display: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 30px;
+    margin: auto;
+    width: 100%;
+    flex: none;
+    overflow-x: scroll;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.product-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card{
+    position: relative;
+    display: flex;
+    /* grid-column: span 3; */
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+
+}
+.product-image{
+    width: 100%;
+    display: block;
+}
+.add-cart {
+    position: absolute;
+    top: 80%; /* start from the middle of the card*/
+    left: 50%;
+    width: 300px; 
+    height: 40px;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    transform: translate(-50%, 50%); /* center the button and start off-screen */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* smooth transiotn for hover*/
+    opacity: 0; 
+    border: none;
+    text-align: center;
+}
+
+.card:hover .add-cart {
+    transform: translate(-50%, -50%); /*center the button in the middle*/
+    opacity: 1; /* Show button on hover */
+}
+
+.add-cart:hover {
+    background-color: lightskyblue; 
+    transition: 0.6s; 
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.price {
+    font-size: large;
+    color:  lightskyblue;
+    margin-top: 5px;
+}
+.products a{
+    color: black;
+    font-weight: lighter;
+    text-decoration-line: underline ;
+    font-size: 18px;
+}
+.products a:hover{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        display: flex;
+        flex-direction: row; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; /* scroll on x only*/
+        padding: 0; 
+        margin: 0 auto; 
+    }
+    
+    .card {
+        flex: 0 0 100%; /* Take up full width on mobile */
+        max-width: 100%; 
+        scroll-snap-align: center; 
+        margin: 0 0; 
+    }
+
+    .product-image {
+        width: 100%;
+        object-fit: cover; 
+    }
+
+    .add-cart {
+        width: 90%;
+    }
+    
+}
